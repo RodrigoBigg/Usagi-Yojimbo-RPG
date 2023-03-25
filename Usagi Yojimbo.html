@@ -32,44 +32,44 @@
 </div>
 
 <div class="sheet-box">
-  <div class="coluna1" style="width: 31%;">
+  <div class="coluna1" style="width: 32%;">
     <h2>ATRIBUTOS</h2> 
     <div class="coluna1" style="width: 47%;">
-      <div style="margin-left: 30%;">
+      <div style="margin-left: 0%;">
         <input class="atr-num" type="text" name="atr-iniciativa">
-        <button type="roll" value="/me rolou [[2d6+@{iniciativa}]] em Iniciativa.">
+        <button type="roll" value="/me rolou [[2d6+@{iniciativa}+?{Modifier|0}]] em Iniciativa.">
         </button>
         <label>INICIATIVA</label>
         <input class="atr-num" type="text" name="atr-negociacao">
-        <button type="roll" value="/me rolou [[2d6+@{negociacao}]] em Negociação."> 
+        <button type="roll" value="/me rolou [[2d6+@{negociacao}+?{Modifier|0}]] em Negociação."> 
         </button>
         <label>NEGOCIAÇÃO</label>
         <input class="atr-num" type="text" name="atr-integridade">
-        <button type="roll" value="/me rolou [[2d6+@{integridade}]] em Integridade.">
+        <button type="roll" value="/me rolou [[2d6+@{integridade}+?{Modifier|0}]] em Integridade.">
         </button>
         <label>INTEGRIDADE</label>
         <input class="atr-num" type="text" name="atr-escolaridade">
-        <button type="roll" value="/me rolou [[2d6+@{escolaridade}]] em Escolaridade.">
+        <button type="roll" value="/me rolou [[2d6+@{escolaridade}+?{Modifier|0}]] em Escolaridade.">
         </button>
         <label>ESCOLARIDADE</label>
         <hr>
         <input class="atr-num" type="text" name="atr-historia">
-        <button type="roll" value="/me rolou [[2d6+@{historia}]] em História.">
+        <button type="roll" value="/me rolou [[2d6+@{historia}+?{Modifier|0}]] em História.">
         </button>
         <label>HISTÓRIA</label>
         <input class="atr-num" type="text" name="atr-suporte">
-        <button type="roll" value="/me rolou [[2d6+@{suporte}]] em Suporte.">
+        <button type="roll" value="/me rolou [[2d6+@{suporte}+?{Modifier|0}]] em Suporte.">
         </button>
         <label>SUPORTE</label>
         <input class="atr-num" type="text" name="atr-contratempo">
-        <button type="roll" value="/me rolou [[2d6-@{contratempo}]] em Contratempo.">
+        <button type="roll" value="/me rolou [[2d6-@{contratempo}+?{Modifier|0}]] em Contratempo.">
         </button>
         <label>CONTRATEMPO</label>
       </div>
     </div>
 
-    <div class="coluna3" style="width: 47%;">
-      <div style="margin-left: 40%;">
+    <div class="prejuizos" style="width: 32%;">
+      <div style="margin-left: 10%;">
 
         <input type="checkbox" name="compl1" value="1">
         <label>Desajeitada</label>
@@ -103,16 +103,16 @@
 	 </div>
 	 </div>
 	 
-	 <div class="coluna2" style="width: 33%;">
+	 <div class="coluna2" style="width: 32%;">
 	  <h2>MOVIMENTO ÚNICO</h2>
-    <input type="text" name="pers-especie">
+    <input type="text" name="movunico">
     <BR>
     <BR>
     <div class="coluna1" style="width: 100%;">
 	<div style="margin-left: 0%;">
     <textarea name="mov1" rows="10"></textarea>
     <h2>MOVIMENTO DE COMBATE</h2>
-    <input type="text" name="pers-especie">
+    <input type="text" name="movcomb">
     <BR>
     <BR>
     <div style="margin-left: 0%;">
@@ -122,13 +122,34 @@
     </div>
 	</div>
     
-    <div class="coluna3" style="width: 33%;">
+    <div class="coluna3" style="width: 32%;">
       <h2>MELHORIAS</h2>
       <div style="margin-left: 0%;">
-        <textarea name="mov2" rows="20"></textarea>   
+        
+        <input type="text" name="movunico">
+        <br>
+        <br>
+        <textarea name="melhorias" rows="3"></textarea> 
+        <div></div>
+        <br>        
+        <hr>        
+        <br>
+        <input type="text" name="movunico">
+        <br>
+        <br>
+        <textarea name="melhorias" rows="3"></textarea> 
+        <div></div>
+        <br>        
+        <hr>        
+        <br>
+        <input type="text" name="movunico">
+        <br>
+        <br>
+        <textarea name="melhorias" rows="3"></textarea> 
+        <div></div>
+          
     </div><h2>POSIÇÃO</h2>  
-    <BR>  
-    <div style="margin-left: 0%;">
+      <div style="margin-left: 3%;">
       <input type="checkbox" name="pos1" value="1">
       <label class="sheet-inline">Exposto</label>
       <input type="checkbox" name="pos2" value="1">
